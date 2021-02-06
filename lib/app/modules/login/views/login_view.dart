@@ -35,6 +35,16 @@ class LoginView extends GetView<LoginController> {
               ),
               TextFormField(
                 decoration: InputDecoration(
+                  labelText: "Your Name",
+                ),
+                onChanged: (value) => controller.name = value,
+              ),
+              SizedBox(
+                height: 12.h,
+              ),
+              TextFormField(
+                keyboardType: TextInputType.phone,
+                decoration: InputDecoration(
                   labelText: "Phone number",
                 ),
                 onChanged: (value) => controller.phone = value,

@@ -1,10 +1,13 @@
 import 'package:chat_app/app/util/constant.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'app/routes/app_pages.dart';
 import 'index.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     ScreenUtilInit(
       designSize: Size(750, 1334),
@@ -17,6 +20,13 @@ void main() {
           darkTheme: ThemeData.dark().copyWith(
             primaryColor: Constants.mainColor,
             accentColor: Constants.mainColor,
+            floatingActionButtonTheme: FloatingActionButtonThemeData(
+              backgroundColor: Constants.mainColor,
+            ),
+            iconTheme: IconThemeData(
+              color: Colors.white,
+            ),
+            scaffoldBackgroundColor: Constants.scaffoldBackgroundColor,
             buttonTheme: ButtonThemeData(
               height: 50,
               shape: RoundedRectangleBorder(

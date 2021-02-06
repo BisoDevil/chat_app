@@ -23,20 +23,28 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  agora_rtc_engine: ^1.0.15
+  bubble: ^1.1.9+1
   cached_network_image: ^2.5.0
   carousel_slider: ^2.3.1
+  cloud_firestore: ^0.16.0
   cupertino_icons: ^1.0.0
+  diamond_notched_fab: ^0.0.1
   dio: ^3.0.10
   dio_http_cache: ^0.2.11
-  flutter_facebook_auth: ^2.0.0+1
+  emoji_picker: ^0.1.0
+  firebase_auth: ^0.20.0+1
+  firebase_core: ^0.7.0
+  firebase_database: ^6.0.0
   flutter_screenutil: ^4.0.2+3
   flutter_svg: ^0.19.0
   font_awesome_flutter: ^8.10.0
   get: 3.24.0
   get_storage: ^1.4.0
-  google_sign_in: ^4.5.9
   intl: ^0.16.1
   oktoast: ^2.3.2
+  permission_handler: ^3.0.0
+  shape_of_view: ^1.0.2
   supercharged: ^1.12.0
 
 dev_dependencies:
@@ -80,3 +88,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+module:
+  androidX: true
+  androidPackage: com.innovationcodes.chat_app
+  iosBundleIdentifier: com.innovationcodes.chat_app
